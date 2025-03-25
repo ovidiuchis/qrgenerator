@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>QR code generator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>  
+  <div id="qrcode"></div>
+
+  <script>
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    const text = getQueryParam('content');
+    const size = parseInt(getQueryParam('size')) || 200; // default 200px
+
+    if (text) {
+      new QRCode(document.getElementById("qrcode"), {
+        text: decodeURIComponent(text),
+        width: size,
+        height: size,
+      });
+    } else {
+      document.getElementById("qrcode").innerHTML = "<p>No <code>content</code> param provided</p>";
+    }
+  </script>
+</body>
+</html>
