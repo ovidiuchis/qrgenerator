@@ -13,12 +13,12 @@
       return urlParams.get(param);
     }
 
-    const text = getQueryParam('content');
+    const content = getQueryParam('content');
     const size = parseInt(getQueryParam('size')) || 200; // default 200px
 
-    if (text) {
+    if (content) {
       new QRCode(document.getElementById("qrcode"), {
-        text: decodeURIComponent(text),
+        text: decodeURIComponent(content),
         width: size,
         height: size,
       });

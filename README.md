@@ -8,7 +8,7 @@ A simple and lightweight QR Code generator built with HTML and JavaScript. It ge
 
 ## 🔗 Live Demo
 
-👉 [View Live](https://ovidiuchis.github.io/qrgenerator/?content=Hello%20World&size=200)
+👉 <a href="https://ovidiuchis.github.io/qrgenerator/?content=Hello%20World" target="_blank">View Live</a>
 
 ---
 
@@ -19,5 +19,5 @@ Sans providing the size, a image of 200px x 200 px will be generated.
 
 ### ✅ Examples
 
-👉 [Simple text](https://ovidiuchis.github.io/qrgenerator/?content=this%20is%20some%20encoded%20text)
-👉 [URL](https://ovidiuchis.github.io/qrgenerator/?content=https://www.decathlon.ro/&size=350)
+👉 <a href="https://ovidiuchis.github.io/qrgenerator/?content=this%20is%20some%20encoded%20text" target="_blank">Simple text</a>
+👉 <a href="https://ovidiuchis.github.io/qrgenerator/?content=https://www.decathlon.ro/&size=350" target="_blank">URL</a>
