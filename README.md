@@ -17,4 +17,7 @@ A simple and lightweight QR Code generator built with HTML and JavaScript. It ge
 This tool reads the `content` and optional `size` parameters from the URL to generate a QR code dynamically.
 Sans providing the size, a image of 200px x 200 px will be generated.
 
-### ✅ Example:
+### ✅ Examples
+
+👉 [Simple text](https://ovidiuchis.github.io/qrgenerator/?content=this%20is%20some%20encoded%20text)
+👉 [URL](https://ovidiuchis.github.io/qrgenerator/?content=https://www.decathlon.ro/&size=350)
