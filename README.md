@@ -25,4 +25,4 @@ Sans providing the size, a image of 200px x 200 px will be generated.
 
 🛜 <a href="https://ovidiuchis.github.io/qrgenerator/?content=WIFI:T:WPA;S:SSIDNAME;P:SSIDPASS;H:;;" target="_blank">WiFi acces</a>
 
-
+**[QR Codes](https://en.wikipedia.org/wiki/QR_code) are a smart way** of encoding and making data accessible, see <a href="https://github.com/zxing/zxing/wiki/Barcode-Contents" target="_blank">this wiki </a> for other formats (like a contact card, map address and others)
