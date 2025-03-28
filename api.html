@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QR Code API</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: white;
+      }
+      #qrcode {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="qrcode"></div>
+    <script>
+      function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+      }
+
+      // Get parameters from URL
+      const content = getQueryParam('content');
+      const size = parseInt(getQueryParam('size')) || 200;
+
+      if (!content) {
+        document.body.innerHTML = 'Error: content parameter is required';
+      } else {
+        // Create QR code
+        const qrcodeElement = document.getElementById('qrcode');
+        new QRCode(qrcodeElement, {
+          text: decodeURIComponent(content),
+          width: size,
+          height: size
+        });
+
+        // Wait for the QR code to be generated
+        setTimeout(() => {
+          const qrImage = qrcodeElement.querySelector('img');
+          if (qrImage) {
+            // Replace the entire body with just the image
+            document.body.innerHTML = '';
+            document.body.appendChild(qrImage);
+          } else {
+            document.body.innerHTML = 'Error: Failed to generate QR code';
+          }
+        }, 100);
+      }
+    </script>
+  </body>
+</html> 
