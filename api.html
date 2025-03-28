@@ -27,32 +27,37 @@
       }
 
       // Get parameters from URL
-      const content = getQueryParam('content');
-      const size = parseInt(getQueryParam('size')) || 200;
+      const content = getQueryParam("content");
+      const size = parseInt(getQueryParam("size")) || 200;
 
       if (!content) {
-        document.body.innerHTML = 'Error: content parameter is required';
+        document.body.innerHTML = "Error: content parameter is required";
       } else {
         // Create QR code
-        const qrcodeElement = document.getElementById('qrcode');
+        const qrcodeElement = document.getElementById("qrcode");
         new QRCode(qrcodeElement, {
           text: decodeURIComponent(content),
           width: size,
-          height: size
+          height: size,
+          colorDark: "#000000",
+          colorLight: "#ffffff",
+          correctLevel: QRCode.CorrectLevel.H,
         });
 
         // Wait for the QR code to be generated
         setTimeout(() => {
-          const qrImage = qrcodeElement.querySelector('img');
+          const qrImage = qrcodeElement.querySelector("img");
           if (qrImage) {
+            // Set CORS attributes
+            qrImage.crossOrigin = "anonymous";
             // Replace the entire body with just the image
-            document.body.innerHTML = '';
+            document.body.innerHTML = "";
             document.body.appendChild(qrImage);
           } else {
-            document.body.innerHTML = 'Error: Failed to generate QR code';
+            document.body.innerHTML = "Error: Failed to generate QR code";
           }
         }, 100);
       }
     </script>
   </body>
-</html> 
+</html>
