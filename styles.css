@@ -31,6 +31,45 @@ h1 {
   margin-bottom: 25px;
 }
 
+.color-group {
+  margin-bottom: 20px;
+}
+
+.color-input-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+input[type="color"] {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+  border-radius: 8px;
+}
+
+input[type="color"]::-moz-color-swatch {
+  border: none;
+  border-radius: 8px;
+}
+
+input[type="text"] {
+  flex: 1;
+}
+
 label {
   display: block;
   margin-bottom: 8px;
@@ -172,6 +211,15 @@ button:active {
 
   .form-group {
     margin-bottom: 20px;
+  }
+
+  .color-input-wrapper {
+    gap: 8px;
+  }
+
+  input[type="color"] {
+    width: 45px;
+    height: 45px;
   }
 
   label {

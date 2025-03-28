@@ -16,8 +16,12 @@ A simple and lightweight QR Code generator built with HTML and JavaScript. It ge
 
 ## ⚙️ How It Works
 
-This tool reads the `content` and optional `size` parameters from the URL to generate a QR code dynamically.
-Sans providing the size, a image of 200px x 200 px will be generated.
+Via UI elements you can input the text (or URL) and also other optional parameters (size and colors) and generate the image.
+
+## 📸 Screenshots
+
+![screenshot](assets/initialv.png)
+![screenshot](assets/generatedv.png)
 
 ### ✅ TODO
 

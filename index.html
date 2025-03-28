@@ -21,6 +21,20 @@
         <label for="size">Size (px):</label>
         <input type="number" id="size" value="200" min="100" max="1000" />
       </div>
+      <div class="form-group color-group">
+        <label for="qrColor">QR Code Color:</label>
+        <div class="color-input-wrapper">
+          <input type="color" id="qrColor" value="#000000" />
+          <input type="text" id="qrColorText" value="#000000" />
+        </div>
+      </div>
+      <div class="form-group color-group">
+        <label for="bgColor">Background Color:</label>
+        <div class="color-input-wrapper">
+          <input type="color" id="bgColor" value="#ffffff" />
+          <input type="text" id="bgColorText" value="#ffffff" />
+        </div>
+      </div>
       <button onclick="generateQR()" style="background-color: #4caf50">
         Generate QR Code
       </button>
