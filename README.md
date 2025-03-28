@@ -10,7 +10,7 @@ A simple and lightweight QR Code generator built with HTML and JavaScript. It ge
 
 ## 🔗 Live Demo
 
-👉 <a href="https://ovidiuchis.github.io/qrgenerator/?content=Hello%20World" target="_blank">View Live</a>
+👉 <a href="https://ovidiuchis.github.io/qrgenerator/" target="_blank">View Live</a>
 
 ---
 
