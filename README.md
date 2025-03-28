@@ -21,8 +21,7 @@ Sans providing the size, a image of 200px x 200 px will be generated.
 
 ### ✅ Examples
 
-👉 <a href="https://ovidiuchis.github.io/qrgenerator/?content=this%20is%20some%20encoded%20text" target="_blank">Simple text</a>
+TODO
 
-🔗 <a href="https://ovidiuchis.github.io/qrgenerator/?content=https://www.decathlon.ro/&size=350" target="_blank">URL</a>
-
-🛜 <a href="https://ovidiuchis.github.io/qrgenerator/?content=WIFI:T:WPA;S:SSIDNAME;P:SSIDPASS;H:;;" target="_blank">WiFi acces</a>
+- [ ] UI for inputting different formats (wifi, vcard)
+- [ ] Method to generate QR image "api" style
