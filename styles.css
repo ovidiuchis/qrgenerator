@@ -121,7 +121,21 @@ button:hover {
 button:active {
   transform: scale(0.98);
 }
+footer a.source-link {
+  color: #2b8a3e; /* Base color */
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
 
+footer a.source-link:hover,
+footer a.source-link:focus {
+  color: #1f6a2d; /* Darker green on hover/focus */
+  text-decoration: underline;
+}
+
+footer a.source-link:visited {
+  color: #246835;
+}
 #qrcode {
   margin-top: 35px;
   text-align: center;
