@@ -26,4 +26,4 @@ Via UI elements you can input the text (or URL) and also other optional paramete
 ### ✅ TODO
 
 - [ ] UI for inputting different formats (wifi, vcard)
-- [ ] Method to generate QR image "api" style
+- [ ] Make the design more modern, sleek
